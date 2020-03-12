@@ -759,6 +759,7 @@ let DashboardComponent = class DashboardComponent {
     }
     ngOnInit() {
         this.checkStatus();
+        this.socketService.setuser(ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_5__["Cookie"].get('AuthToken'));
         this.verifyUserConfirmation();
         this.getUser(this.userId);
         this.spinner.show();
@@ -1280,6 +1281,7 @@ let GroupComponent = class GroupComponent {
     }
     ngOnInit() {
         this.checkStatus();
+        this.SocketService.setuser(ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_6__["Cookie"].get('AuthToken'));
         //  this.verifyUserConfirmation();
         this.groupName = this.route.snapshot.paramMap.get('groupName');
         this.getGroupInfo(this.groupName);

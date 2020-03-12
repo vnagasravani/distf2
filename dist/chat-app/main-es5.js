@@ -1841,14 +1841,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             return true;
           }
         }; // end checkStatus
-        // public verifyUserConfirmation: any = () => {
-        //  console.log('verify user confirmation is called');
-        //   this.SocketService.verifyUser()
-        //     .then((data) => {
-        //       this.disconnectedSocket = false;
-        //       this.SocketService.setuser(Cookie.get('AuthToken'));
-        //     });
-        // }//end verifyUserConfirmation
+
+
+        this.verifyUserConfirmation = function () {
+          console.log('verify user confirmation is called');
+
+          _this2.SocketService.verifyUser(); //  this.disconnectedSocket = false;
+
+
+          _this2.SocketService.setuser(ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_6__["Cookie"].get('AuthToken'));
+
+          ;
+        }; //end verifyUserConfirmation
 
 
         this.getGroupInfo = function (groupName) {
@@ -2191,6 +2195,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.groupName = this.route.snapshot.paramMap.get('groupName');
           this.getGroupInfo(this.groupName);
+          this.verifyUserConfirmation();
           this.getExpenses();
           this.delExpenseResponse();
           this.editAmountResponse();
@@ -3683,7 +3688,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! D:\git\ExpenseManagement\chat-app\src\main.ts */
+    /*! D:\git\New folder\chat-app\src\main.ts */
     "./src/main.ts");
     /***/
   },

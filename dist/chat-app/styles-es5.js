@@ -494,19 +494,19 @@
   /***/
   function _(module, exports, __webpack_require__) {
     __webpack_require__(
-    /*! D:\git\ExpenseManagement\chat-app\node_modules\bootstrap\dist\css\bootstrap.css */
+    /*! D:\git\New folder\chat-app\node_modules\bootstrap\dist\css\bootstrap.css */
     "./node_modules/bootstrap/dist/css/bootstrap.css");
 
     __webpack_require__(
-    /*! D:\git\ExpenseManagement\chat-app\src\styles.css */
+    /*! D:\git\New folder\chat-app\src\styles.css */
     "./src/styles.css");
 
     __webpack_require__(
-    /*! D:\git\ExpenseManagement\chat-app\node_modules\ngx-toastr\toastr.css */
+    /*! D:\git\New folder\chat-app\node_modules\ngx-toastr\toastr.css */
     "./node_modules/ngx-toastr/toastr.css");
 
     module.exports = __webpack_require__(
-    /*! D:\git\ExpenseManagement\chat-app\node_modules\font-awesome\css\font-awesome.css */
+    /*! D:\git\New folder\chat-app\node_modules\font-awesome\css\font-awesome.css */
     "./node_modules/font-awesome/css/font-awesome.css");
     /***/
   }

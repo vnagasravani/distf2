@@ -1025,14 +1025,13 @@ let GroupComponent = class GroupComponent {
                 return true;
             }
         }; // end checkStatus
-        // public verifyUserConfirmation: any = () => {
-        //  console.log('verify user confirmation is called');
-        //   this.SocketService.verifyUser()
-        //     .then((data) => {
-        //       this.disconnectedSocket = false;
-        //       this.SocketService.setuser(Cookie.get('AuthToken'));
-        //     });
-        // }//end verifyUserConfirmation
+        this.verifyUserConfirmation = () => {
+            console.log('verify user confirmation is called');
+            this.SocketService.verifyUser();
+            //  this.disconnectedSocket = false;
+            this.SocketService.setuser(ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_6__["Cookie"].get('AuthToken'));
+            ;
+        }; //end verifyUserConfirmation
         this.getGroupInfo = (groupName) => {
             this.appService.getGroupDetails(groupName).subscribe((data) => {
                 this.groupDetails = data.data;
@@ -1284,6 +1283,7 @@ let GroupComponent = class GroupComponent {
         //  this.verifyUserConfirmation();
         this.groupName = this.route.snapshot.paramMap.get('groupName');
         this.getGroupInfo(this.groupName);
+        this.verifyUserConfirmation();
         this.getExpenses();
         this.delExpenseResponse();
         this.editAmountResponse();
@@ -2254,7 +2254,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\git\ExpenseManagement\chat-app\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\git\New folder\chat-app\src\main.ts */"./src/main.ts");
 
 
 /***/ }),
